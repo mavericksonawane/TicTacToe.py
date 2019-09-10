@@ -116,7 +116,7 @@ def main():
         if not(isWinner(board, 'X')):
             move = compMove()
             if move == 0:
-                print('Tai Game! Machine is tough to beat ;)')
+                print('Tie Game! Machine is tough to beat ;)')
             else:
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
@@ -126,7 +126,7 @@ def main():
             break
 
     if isBoardFull(board):
-        print('Tai Game! Machine is tough to beat ;)')
+        print('Tie Game! Machine is tough to beat ;)')
 
 main()
 while True:
